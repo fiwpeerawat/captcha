@@ -50,6 +50,11 @@ describe("The Captcha", function() {
     expect(captcha.generate(2,2,1,0)).toBe("one - 0");
   });
 
+  it("generate to two - 0", function() {
+    expect(captcha.generate(2,2,2,0)).toBe("two - 0");
+  });
+
+
 
 
 });
