@@ -1,3 +1,15 @@
+
+var Operators = function(){
+
+  this.operator = ["+","-"]
+
+  this.get_operator = function(index_is){
+      return this.operator[index_is-1]
+  }
+
+
+
+}
 var Captcha = function(){
 
 this.generate = function(){
