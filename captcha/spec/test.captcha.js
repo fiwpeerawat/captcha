@@ -10,6 +10,10 @@ describe("The Captcha", function() {
     expect(captcha.generate(1,1,0,1)).toBe("0 + one");
   });
 
+  it("generate to 0 + two", function() {
+    expect(captcha.generate(1,1,0,2)).toBe("0 + two");
+  });
+
 
 
 });
