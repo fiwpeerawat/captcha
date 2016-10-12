@@ -18,6 +18,10 @@ describe("The Captcha", function() {
     expect(captcha.generate(1,1,0,3)).toBe("0 + three");
   });
 
+  it("generate to 0 + four", function() {
+    expect(captcha.generate(1,1,0,3)).toBe("0 + four");
+  });
+
 
 
 });
