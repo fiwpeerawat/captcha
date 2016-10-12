@@ -42,5 +42,9 @@ describe("The Captcha", function() {
     expect(captcha.generate(1,1,0,9)).toBe("0 + nine");
   });
 
+  it("generate to zero - 0", function() {
+    expect(captcha.generate(2,2,0,0)).toBe("zero - 0");
+  });
+
 
 });
