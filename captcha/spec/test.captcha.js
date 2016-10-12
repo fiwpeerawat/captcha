@@ -30,6 +30,9 @@ describe("The Captcha", function() {
     expect(captcha.generate(1,1,0,6)).toBe("0 + six");
   });
 
+  it("generate to 0 + seven", function() {
+    expect(captcha.generate(1,1,0,7)).toBe("0 + seven");
+  });
 
 
 });
