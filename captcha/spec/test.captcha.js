@@ -1,5 +1,5 @@
 
-var Operators = function(){
+var O_perators = function(){
 
   this.operator = ["+","-"]
 
@@ -7,14 +7,40 @@ var Operators = function(){
       return this.operator[index_is-1]
   }
 
+}
 
+var O_perand = function(){
+
+  this.string_of_Operand = [
+                            "zero",
+                            "one",
+                            "two",
+                            "three",
+                            "four",
+                            "five",
+                            "six",
+                            "seven",
+                            "eight",
+                            "nine"
+                          ]
+
+  this.get_operand = function(index_is){
+      return this.string_of_Operand[index_is]
+  }
 
 }
+
+
 var Captcha = function(){
 
-this.generate = function(){
+var operators = new O_perators()
+var operand    = new O_perand()
 
-   return " "
+this.generate = function(i1,i2,i3,i4){
+
+  if(i1 === 1)
+    return i3 + " " + operators.get_operator(i2)+ " " + operand.get_operand(i4)
+  else return operand.get_operand(i3) + " " + operators.get_operator(i2)+ " " + i4
 }
 
 
@@ -46,7 +72,7 @@ describe("The Captcha", function() {
     expect(captcha.generate(1,1,0,4)).toBe("0 + four");
   });
 
-  it("generate to 0 + five", function() {
+  it("generate to 0 + ", function() {
     expect(captcha.generate(1,1,0,5)).toBe("0 + five");
   });
 
