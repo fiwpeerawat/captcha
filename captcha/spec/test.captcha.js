@@ -34,5 +34,9 @@ describe("The Captcha", function() {
     expect(captcha.generate(1,1,0,7)).toBe("0 + seven");
   });
 
+  it("generate to 0 + eight", function() {
+    expect(captcha.generate(1,1,0,8)).toBe("0 + eight");
+  });
+
 
 });
