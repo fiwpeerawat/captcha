@@ -1,3 +1,15 @@
+var Captcha = function(){
+
+this.generate = function(){
+
+   return " "
+}
+
+
+}
+
+
+
 describe("The Captcha", function() {
 
   var captcha = new Captcha();
