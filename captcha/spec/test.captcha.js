@@ -19,7 +19,11 @@ describe("The Captcha", function() {
   });
 
   it("generate to 0 + four", function() {
-    expect(captcha.generate(1,1,0,3)).toBe("0 + four");
+    expect(captcha.generate(1,1,0,4)).toBe("0 + four");
+  });
+
+  it("generate to 0 + five", function() {
+    expect(captcha.generate(1,1,0,5)).toBe("0 + five");
   });
 
 
